@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotflix - Online Movies, TV Shows & Cinema</title>
+    <link rel="shortcut icon" type="" href="images/fav.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header__content d-flex">
+                        <!-- header logo -->
+                        <a href="index.html" class="header__logo">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                        <!-- end header logo -->
+                        <!-- header nav -->
+                        <ul class="header__nav d-inline-flex ml-5">
+                            <li class="featured_list"><a href="#">HOME</a></li>
+                            <li class="featured_list"><a href="#">CATALOG</a></li>
+                            <li class="featured_list"><a href="#">PRICING PLANS</a></li>
+                            <li class="featured_list mt-1">
+                                <a href="#">
+                                    <ion-icon style="font-size: 20px;font-weight: 600;" name="ellipsis-horizontal-outline"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="header__auth ml-5">
+                            <form action="#" class="header__search">
+                                <input class="header__search-input" type="text" placeholder="Search ...">
+                            </form>
+                            <!-- dropdown -->
+                            <div class="dropdown header__lang">
+                                <a class="dropdown-toggle header__nav-link mt-3" href="#" role="button" id="dropdownMenuLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN <i class="icon ion-ios-arrow-down"></i></a>
+                                <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuLang">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Spanish</a></li>
+                                    <li><a href="#">Russian</a></li>
+                                </ul>
+                            </div>
+                            <!-- end dropdown -->
+                            <a href="login.html" class="header__sign-in">
+                                <button type="button" id="cl_btn" class="btn btn-outline-success ml-5">SIGN IN</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="hme">
+        <div class="container">
+            <div class="contents">
+                <h1 class="home__title text-white"><span class="txt_h1">NEW ITEMS</span> OF THIS SEASON</h1>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover.jpg" alt="Card image cap">
+                            <a href="details.html" class="card__play">
+                                <i class="fas fa-play-circle fa-2x"></i>
+                            </a>
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">I Dream in Another ...</a></h3>
+                            <span class="card__category">
+                     <a href="#">Action,</a>
+                     <a href="#">Thriller</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover2.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Benched</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover3.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Whitney</a></h3>
+                            <span class="card__category">
+                     <a href="#">Romance</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover4.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="hme">
+        <div class="container">
+            <div class="contents">
+                <h2 class="content__title text-white">New items</h2>
+                <ul class="nav nav-tabs content__tabs" id="content__tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link act" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">NEW RELEASES</a>
+                        <div class="underline"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">MOVIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">TV SERIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="false">CARTOONS</a>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">I Dream in Another ...</a></h3>
+                            <span class="card__category">
+                     <a href="#">Action,</a>
+                     <a href="#">Thriller</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover2.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Benched</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover3.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Whitney</a></h3>
+                            <span class="card__category">
+                     <a href="#">Romance</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover4.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover5.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover6.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover7.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover8.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover9.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover10.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover11.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover12.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover13.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover14.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover15.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover16.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover17.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover18.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="hme">
+        <div class="container">
+            <div class="contents">
+                <h1 class="hme__tlt text-white">Expected premiere</h1>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">I Dream in Another ...</a></h3>
+                            <span class="card__category">
+                     <a href="#">Action,</a>
+                     <a href="#">Thriller</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover2.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Benched</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover3.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Whitney</a></h3>
+                            <span class="card__category">
+                     <a href="#">Romance</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover7.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover12.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 14rem;">
+                            <img class="card-img-top" src="images/cover16.jpg" alt="Card image cap">
+                            <span class="card__rate card__rate--green">8.4</span>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title"><a href="details.html">Blindspotting</a></h3>
+                            <span class="card__category">
+                     <a href="#">Comedy,</a>
+                     <a href="#">Drama</a>
+                     </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <Section class="ad">
+        <div class="container">
+            <div class="ad_content">
+                <h1 class="hme__tlt"><span class="font-weight-bold">HotFlix</span> – Best Place for Movies</h1>
+                <p class="sub_title text-white mt-3">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.
+                    Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+                    <br>
+                    <p class="sub_title2 mt-4 text-white">Content here, content here, making it look like <span class="span_t">readable</span> English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will
+                        uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                </p>
+            </div>
+        </div>
+    </Section>
+    <section class="pricing">
+        <! ========================  
+         Syed Sahar Ali Raza     
+         ======================== !>
+        <div id="generic_price_table">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!--PRICE HEADING START-->
+                            <div class="price-heading clearfix">
+                            </div>
+                            <!--//PRICE HEADING END-->
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <!--BLOCK ROW START-->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!--PRICE CONTENT START-->
+                            <div class="generic_content clearfix">
+                                <!--HEAD PRICE DETAIL START-->
+                                <div class="generic_head_price clearfix">
+                                    <!--HEAD CONTENT START-->
+                                    <div class="generic_head_content clearfix">
+                                        <!--HEAD START-->
+                                        <div class="head_bg"></div>
+                                        <div class="head">
+                                            <span>Basic</span>
+                                        </div>
+                                        <!--//HEAD END-->
+                                    </div>
+                                    <!--//HEAD CONTENT END-->
+                                    <!--PRICE START-->
+                                    <div class="generic_price_tag clearfix">
+                                        <span class="price">
+                                 <span class="sign"></span>
+                                        <span class="currency"></span>
+                                        <span class="cent"></span>
+                                        <span class="currency">FREE</span>
+                                        </span>
+                                    </div>
+                                    <!--//PRICE END-->
+                                </div>
+                                <!--//HEAD PRICE DETAIL END-->
+                                <!--FEATURE LIST START-->
+                                <div class="generic_feature_list">
+                                    <ul>
+                                        <li class="list_bottom"><span><i style="color: green;" class="fas fa-check"></i> 7 days</span></li>
+                                        <li class="list_bottom"><span><i style="color: green;" class="fas fa-check fa-sm"></i> 720p Resolution</span></li>
+                                        <li class="list_bottom"><span><i style="color: #eb5757;" class="fas fa-times"></i> Limited Availability</span></li>
+                                        <li class="list_bottom"><span><i style="color: #eb5757;" class="fas fa-times"></i> Desktop Only</span></li>
+                                        <li class="list_bottom"><span><i style="color: #eb5757;" class="fas fa-times"></i> Limited Support</span></li>
+                                    </ul>
+                                </div>
+                                <!--//FEATURE LIST END-->
+                                <!--BUTTON START-->
+                                <div class="generic_price_btn clearfix">
+                                    <a class="sig_btn" href="">Sign up</a>
+                                </div>
+                                <!--//BUTTON END-->
+                            </div>
+                            <!--//PRICE CONTENT END-->
+                        </div>
+                        <div class="col-md-4">
+                            <!--PRICE CONTENT START-->
+                            <div class="generic_content active clearfix">
+                                <!--HEAD PRICE DETAIL START-->
+                                <div class="generic_head_price clearfix">
+                                    <!--HEAD CONTENT START-->
+                                    <div class="generic_head_content clearfix">
+                                        <!--HEAD START-->
+                                        <div class="head_bg"></div>
+                                        <div class="head">
+                                            <span>Premium</span>
+                                        </div>
+                                        <!--//HEAD END-->
+                                    </div>
+                                    <!--//HEAD CONTENT END-->
+                                    <!--PRICE START-->
+                                    <div class="generic_price_tag clearfix">
+                                        <span class="price">
+                                 <span class="sign">$</span>
+                                        <span class="currency">199</span>
+                                        <span class="cent">.99</span>
+                                        <span class="month">/MON</span>
+                                        </span>
+                                    </div>
+                                    <!--//PRICE END-->
+                                </div>
+                                <!--//HEAD PRICE DETAIL END-->
+                                <!--FEATURE LIST START-->
+                                <div class="generic_feature_list">
+                                    <ul>
+                                        <li class="list_bottom"><span><i style="color: green;" class="fas fa-check"></i> 1 Month</span></li>
+                                        <li class="list_bottom"><span><i style="color: green;" class="fas fa-check"></i> Full HD</span></li>
+                                        <li class="list_bottom"><span><i style="color: green;" class="fas fa-check"></i> Lifetime Availability</span></li>
+                                        <li class="list_bottom"><span><i style="color: #eb5757;" class="fas fa-times"></i> TV & Desktop</span></li>
+                                        <li class="list_bottom"><span><i style="color: #eb5757;" class="fas fa-times"></i> 24/7 Support</span></li>
+                                    </ul>
+                                </div>
+                                <!--//FEATURE LIST END-->
+                                <!--BUTTON START-->
+                                <div class="generic_price_btn clearfix">
+                                    <a class="sig_btn" href="">Sign up</a>
+                                </div>
+                                <!--//BUTTON END-->
+                            </div>
+                            <!--//PRICE CONTENT END-->
+                        </div>
+                        <div class="col-md-4">
+                            <!--PRICE CONTENT START-->
+                            <div class="generic_content clearfix">
+                                <!--HEAD PRICE DETAIL START-->
+                                <div class="generic_head_price clearfix">
+                                    <!--HEAD CONTENT START-->
+                                    <div class="generic_head_content clearfix">
+                                        <!--HEAD START-->
+                                        <div class="head_bg"></div>
+                                        <div class="head">
+                                            <span>Cinematic</span>
+                                        </div>
+                                        <!--//HEAD END-->
+                                    </div>
+                                    <!--//HEAD CONTENT END-->
+                                    <!--PRICE START-->
+                                    <div class="generic_price_tag clearfix">
+                                        <span class="price">
+                                 <span class="sign">$</span>
+                                        <span class="currency">299</span>
+                                        <span class="cent">.99</span>
+                                        <span class="month">/MON</span>
+                                        </span>
+                                    </div>
+                                    <!--//PRICE END-->
+                                </div>
+                                <!--//HEAD PRICE DETAIL END-->
+                                <!--FEATURE LIST START-->
+                                <div class="generic_feature_list">
+                                    <ul>
+                                        <li class="list_bottom"><span><i style="color: green;" class="fas fa-check"></i> 2 Months</span></li>
+                                        <li class="list_bottom"><span><i style="color: green;" class="fas fa-check"></i> Ultra HD</span></li>
+                                        <li class="list_bottom"><span><i style="color: green;" class="fas fa-check"></i> Lifetime Availability</span></li>
+                                        <li class="list_bottom"><span><i style="color: #eb5757;" class="fas fa-times"></i> Any Device</span></li>
+                                        <li class="list_bottom"><span><i style="color: #eb5757;" class="fas fa-times"></i> 24/7 Support</span></li>
+                                    </ul>
+                                </div>
+                                <!--//FEATURE LIST END-->
+                                <!--BUTTON START-->
+                                <div class="generic_price_btn clearfix">
+                                    <a class="sig_btn" href="">Sign up</a>
+                                </div>
+                                <!--//BUTTON END-->
+                            </div>
+                            <!--//PRICE CONTENT END-->
+                        </div>
+                    </div>
+                    <!--//BLOCK ROW END-->
+                </div>
+            </section>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer__content">
+                        <a href="index.html" class="footer__logo">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                        <span class="footer__copyright">© DIGINAT WORKS, 2021 <br> Created by <a href="#" target="_blank">Learnpod</a></span>
+                        <nav class="footer__nav">
+                            <a href="about.html">About Us</a>
+                            <a href="contacts.html">Contacts</a>
+                            <a href="privacy.html">Privacy policy</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
